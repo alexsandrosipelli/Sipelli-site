@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sipelli Manutenções</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    integrity="sha512-1YvnkXR6gi8slFr0cOnq4DoZ+97xZ1jW4uU7qkmuhly3Yj5Is8GfD1L5T5R3RZ1kM+KU9bq7Nw0b6n7oZ8+9Ag=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <header class="header" role="banner">
+    <div class="container">
+      <img src="logo.png" alt="Logo da Sipelli Manutenções" class="logo" />
+      <h1 class="site-title">Sipelli Manutenções</h1>
+      <nav aria-label="Navegação principal">
+        <ul class="nav-links">
+          <li><a href="#sobre">Sobre</a></li>
+          <li><a href="#servicos">Serviços</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+      </nav>
+      <button id="toggle-darkmode" aria-label="Alternar modo escuro">🌓</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" aria-label="Introdução">
+      <div class="container">
+        <h2>Serviços de manutenção sob medida</h2>
+        <p>A Sipelli oferece soluções personalizadas de manutenção predial, elétrica, hidráulica e muito mais.</p>
+        <button onclick="scrollToSection('contato')" class="btn-principal">Solicite um orçamento</button>
+      </div>
+    </section>
+
+    <section id="sobre" class="sobre" aria-label="Sobre a empresa">
+      <div class="container">
+        <h2>Quem somos</h2>
+        <p>Transformando manutenção em excelência
+          Na Sipelli Manutenções, não apenas reparamos — inovamos. Com uma equipe de engenheiros comprometidos com a
+          qualidade, entregamos soluções de manutenção com agilidade, segurança e um olhar voltado ao futuro. Somos a
+          nova referência em serviços terceirizados para quem busca confiabilidade e alto padrão.
+        </p>
+      </div>
+    </section>
+
+    <section id="servicos" class="servicos" aria-label="Serviços oferecidos">
+      <div class="container">
+        <h2>Serviços em destaque</h2>
+        <div class="cards">
+          <article class="card" tabindex="0">
+            <h3>Manutenção Elétrica</h3>
+            <p>Instalações, reparos e diagnósticos com segurança e precisão.</p>
+          </article>
+          <article class="card" tabindex="0">
+            <h3>Hidráulica</h3>
+            <p>Serviços hidráulicos preventivos e corretivos com equipe especializada.</p>
+          </article>
+          <article class="card" tabindex="0">
+            <h3>Reparos Gerais</h3>
+            <p>Desde ajustes simples até reformas estruturais em ambientes corporativos ou residenciais.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+
+    <section id="contato" class="contato" aria-label="Formulário de contato">
+      <div class="container">
+
+        <h2>Fale conosco agora</h2>
+        <p>Estamos disponíveis para atender você via WhatsApp. Escreva sua mensagem e clique em enviar.</p>
+        <textarea id="mensagem" rows="4" placeholder="Digite sua mensagem aqui..."></textarea>
+        <br />
+        <a id="whatsapp-link" href="#" target="_blank" class="btn-principal">
+          <i class="fab fa-whatsapp"></i> Enviar pelo WhatsApp
+        </a>
+
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <p>&copy; 2025 Sipelli Manutenções. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+
+</body>
+
+</html>
